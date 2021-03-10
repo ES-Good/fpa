@@ -3,11 +3,37 @@
 }
 
 @media(min-width:768px){
-
+    *{
+        font-size: 18px;
+    }
+    .title{
+        &_big{
+            font-family: Ekibastuz-ExtraBlack;
+            font-size: 48px;
+        }
+    }
+    .subtitle{
+        font-family: Ekibastuz-Bold;
+        &_big{
+            font-size: 36px;
+            &_narrow{
+                font-family: Ekibastuz-Regular;
+            }
+        }
+        &_medium{
+            font-size: 24px;
+        }
+    }
 }
 
 @media(min-width:992px){
-
+    html,
+    body{
+        height: 100%;
+    }
+    .img-home{
+        transform: translateX(-10%);
+    }
 }
 
 @media(min-width:1200px){
@@ -15,5 +41,7 @@
 }
 
 @media(min-width:1400px){
-
+    .container{
+        max-width: 1560px
+    }
 }

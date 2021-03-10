@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 14px;
+    font-family: Gilroylight;
 }
 
 @font-face{
@@ -43,7 +45,41 @@
     src: url(../fonts/Gilroyextrabold.woff);
 }
 
+img{
+    width: 100%;
+}
+
 .title{
-    font-family: Ekibastuz-ExtraBlack;
-    font-weight: 900;
+    &_big{
+        font-family: Ekibastuz-ExtraBlack;
+        font-size: 26px;
+        &_narrow{
+            font-family: Ekibastuz-Bold;
+        }
+    }
+}
+
+.subtitle{
+    font-family: Ekibastuz-Bold;
+    &_big{
+        font-size: 18px;
+        &_narrow{
+            font-family: Ekibastuz-Regular;
+        }
+    }
+    &_medium{
+        font-size: 18px;
+    }
+}
+
+.text-blue{
+    color: #0065B1;
+}
+
+.text-red{
+    color: #EE3F58;
+}
+
+.bg-header{
+    background-color: #F6F6F6;
 }
