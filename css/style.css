@@ -3,6 +3,65 @@
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth;
+  height: 100%; }
+
+html,
+body {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #000000; }
+
+body {
+  overflow: hidden;
+  background: #ffffff; }
+
+a,
+a:hover {
+  color: #000000 !important;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer !important; }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0; }
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+input,
+button {
+  font-family: 'Gilroy-Regular';
+  border: none;
+  outline: none;
+  margin: 0px; }
+  input:hover,
+  button:hover {
+    border: 0;
+    outline: none; }
+  input:focus,
+  button:focus {
+    box-shadow: none !important;
+    border: none;
+    outline: none; }
+
 @font-face {
   font-family: Ekibastuz-Light;
   src: url(../fonts/Ekibastuz-Light.woff); }
@@ -26,7 +85,3 @@
 @font-face {
   font-family: Ekibastuz-ExtraBlack;
   src: url(../fonts/Ekibastuz-ExtraBlack.woff); }
-
-.title {
-  font-family: Ekibastuz-ExtraBlack;
-  font-weight: 900; }
