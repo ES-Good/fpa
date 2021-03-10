@@ -3,3 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+@font-face{
+    font-family: Ekibastuz-Light;
+    src: url(../fonts/Ekibastuz-Light.woff);
+}
+@font-face{
+    font-family: Ekibastuz-Regular;
+    src: url(../fonts/Ekibastuz-Regular.woff);
+}
+
+@font-face{
+    font-family: Ekibastuz-Bold;
+    src: url(../fonts/Ekibastuz-Bold.woff);
+}
+
+@font-face{
+    font-family: Ekibastuz-Heavy;
+    src: url(../fonts/Ekibastuz-Heavy.woff);
+}
+
+@font-face{
+    font-family: Ekibastuz-Black;
+    src: url(../fonts/Ekibastuz-Black.woff);
+}
+
+@font-face{
+    font-family: Ekibastuz-ExtraBlack;
+    src: url(../fonts/Ekibastuz-ExtraBlack.woff);
+}
+
+
+.title{
+    font-family: Ekibastuz-ExtraBlack;
+    font-weight: 900;
+}
