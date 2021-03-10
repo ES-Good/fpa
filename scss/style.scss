@@ -35,9 +35,14 @@
     src: url(../fonts/Ekibastuz-ExtraBlack.woff);
 }
 
-@font-face{
-    font-family: Gilroylight;
-    src: url(../fonts/Gilroylight.woff);
+// question-block
+.title-quiz__top {
+    font-family: Ekibastuz-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    color: #A5A5A5;
 }
 
 @font-face{
