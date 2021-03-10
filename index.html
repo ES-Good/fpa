@@ -12,33 +12,279 @@
 </head>
 
 <body>
-    <div class="container-flid bg-header py-3">
-        <div class="container">
+    <div class="modal-thanks d-none">
+        <div class="modal-thanks__content d-flex flex-column align-items-center justify-content-center">
+            <img class="mb-5" src="./img/Vector.png" alt="">
+            <h5 class="modal-title__quiz mb-5 text-center" id="staticBackdropLabel">Спасибо за ответы
+            </h5>
+            <p class="thanks__content--text mb-5">
+                Ваши ответы приняты в <br> обработку.
+            </p>
+            <p class="thanks__content--text">
+                В ближайшие 10 минут с Вами <br> свяжется юрист.
+            </p>
+        </div>
+    </div>
+    <div class="container-flid bg-header py-3 h-adaptation w-100 header">
+        <div class="container d-flex justify-content-between">
             <a href="#" class="logo">
                 Финансовая правовая <br>
                 амнистия
             </a>
-            <button>Бесплатная консультация</button>
+            <button class="btn-blue d-none d-md-block">Бесплатная консультация</button>
+            <a href="#" class="d-block d-md-none">
+                <img src="img/phone.png" alt="" class="phone">
+            </a>
         </div>
     </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <h1 class="title_big_narrow">
-                    Как СПИСАТЬ ВСЕ ДОЛГИ БЕЗ БЕЗ БАНКРОТСТВА в Самаре?
-                </h1>
-                <h3 class="subtitle_big_narrow text-red">Нет давлению ФССП и коллекторов!</h3>
-                <p>
-                    Пройди тест и СПИШИ ДОЛГИ БЕЗ БАНКРОТСТВА,<br> с сохранением имущества.
-                </p>
-                <button>Пройти тест</button>
+    <!-- home -------------------------------------------------------------------------->
+    <div class="home-inner d-none">
+        <div class="container mt-5 h-adaptation home__main">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <h1 class="title_big title_big_narrow">
+                        Как СПИСАТЬ ВСЕ ДОЛГИ БЕЗ БЕЗ БАНКРОТСТВА в Самаре?
+                    </h1>
+                    <h3 class="subtitle_big subtitle_big_narrow text-red">Нет давлению ФССП и коллекторов!</h3>
+                    <p class="mt-5">
+                        Пройди тест и СПИШИ ДОЛГИ БЕЗ БАНКРОТСТВА,<br> с сохранением имущества.
+                    </p>
+                    <button class="btn-red">Пройти тест</button>
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <img src="img/home/r-img.png" alt="" class="img-home">
+                    <h3 class="subtitle subtitle_big text-blue">учавствуй в программе</h3>
+                    <h2 class="title_big">КРЕДИТНАЯ АМНИСТИЯ</h2>
+                    <h3 class="subtitle subtitle_medium text-red">и спишите все кредитные долги законно</h3>
+                </div>
+                <div class="col-12 mt-5 order-3 home__main__footer h-adaptation">
+                    <p>Бонусы после прохождения</p>
+                    <div class="container-ico">
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/1.png" alt="">
+                            <p>Защита от коллекторов и банков</p>
+                        </div>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/2.png" alt="">
+                            <p>Защита имущества</p>
+                        </div>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/3.png" alt="">
+                            <p>Сохраним ваши финансы</p>
+                        </div>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/4.png" alt="">
+                            <p>Процедура  в 5 раз быстрее</p>
+                        </div>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/5.png" alt="">
+                            <p>Не  оставляем черных меток</p>
+                        </div>
+                    </div>
+                </div>  
             </div>
-            <div class="col-12 col-lg-6">
-                <img src="img/home/r-img.png" alt="" class="img-home">
-                <h3 class="subtitle subtitle_big text-blue">учавствуй в программе</h3>
-                <h2 class="title_big">КРЕДИТНАЯ АМНИСТИЯ</h2>
-                <h3 class="subtitle subtitle_medium text-red">и спишите все кредитные долги законно</h3>
-            </div>  
+        </div>
+    </div>
+    <!-- /home -------------------------------------------------------------------------->
+    <div class="container step d-none">
+        <div class="row">
+            <!-- spep-1 ------------------------------------------------------------------------------->
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-lg-start d-none">
+                <p class="text-gray">Как СПИСАТЬ ВСЕ ДОЛГИ БЕЗ БАНКРОТСТВА в Самаре? Нет давлению ФССП и коллекторов!</p>
+                <h3 class="title_medium">Какая у Вас сумма долга сейчас?</h3>
+                <div class="quiz-choice">
+                    <div class="btn-group d-flex flex-column flex-wrap" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary mb-2 mr-2" for="btnradio1">до 300 000 рублей</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio2">от 500 001 до 1 000 000 рублей</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">от 300 001  до 500 000 рублей</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio4">от 1 000 001 рублей</label>
+                    </div>
+                </div>
+            </div>
+            <!-- spep-2 ------------------------------------------------------------------------------->
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-lg-start d-none">
+                <p class="text-gray">Как СПИСАТЬ ВСЕ ДОЛГИ БЕЗ БАНКРОТСТВА в Самаре? Нет давлению ФССП и коллекторов!</p>
+                <h3 class="title_medium">Задолженность перед:</h3>
+                <div class="quiz-choice">
+                    <div class="btn-group d-flex flex-column flex-wrap" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary mb-2 mr-2" for="btnradio5">Банками</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio6">МФО, МКК</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio7">Государственными органами</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio8">Физическими лицами</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio9">Юридическими лицами</label>
+                    </div>
+                </div>
+            </div>
+            <!-- spep-3 ------------------------------------------------------------------------------->
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-lg-start d-none">
+                <p class="text-gray">Как СПИСАТЬ ВСЕ ДОЛГИ БЕЗ БАНКРОТСТВА в Самаре? Нет давлению ФССП и коллекторов!</p>
+                <h3 class="title_medium">Есть ли движимое или недвижимое имущество? (кроме единственного жилья)</h3>
+                <div class="quiz-choice">
+                    <div class="btn-group d-flex flex-column flex-wrap" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary mb-2 mr-2" for="btnradio10">Есть</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio11">Не имеется</label>
+                    </div>
+                </div>
+            </div>
+            <!-- spep-4 ------------------------------------------------------------------------------->
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-lg-start d-none">
+                <p class="text-gray">Как СПИСАТЬ ВСЕ ДОЛГИ БЕЗ БАНКРОТСТВА в Самаре? Нет давлению ФССП и коллекторов!</p>
+                <h3 class="title_medium">Доход официальный или не официальный?</h3>
+                <div class="quiz-choice">
+                    <div class="btn-group d-flex flex-column flex-wrap" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary mb-2 mr-2" for="btnradio12">Официальный</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio13" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio13">Нет дохода</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio14" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio14">Не официальный</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio15" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio15">Пенсия</label>
+                    </div>
+                </div>
+            </div>
+            <!-- spep-5 ------------------------------------------------------------------------------->
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-lg-start d-none">
+                <p class="text-gray">Как СПИСАТЬ ВСЕ ДОЛГИ БЕЗ БАНКРОТСТВА в Самаре? Нет давлению ФССП и коллекторов!</p>
+                <h3 class="title_medium">Доход официальный или не официальный?</h3>
+                <div class="quiz-choice">
+                    <div class="btn-group d-flex flex-column flex-wrap" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio16" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary mb-2 mr-2" for="btnradio16">Есть, куда же без нее</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio17" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio17">Нет, слава богу</label>
+                    </div>
+                </div>
+            </div>
+            <!-- spep-6 ------------------------------------------------------------------------------->
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-lg-start d-none">
+                <p class="text-gray">Как СПИСАТЬ ВСЕ ДОЛГИ БЕЗ БАНКРОТСТВА в Самаре? Нет давлению ФССП и коллекторов!</p>
+                <h3 class="title_medium">В какое время вам удобно получить звонок?</h3>
+                <div class="quiz-choice">
+                    <div class="btn-group d-flex flex-column flex-wrap" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio18" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary mb-2 mr-2" for="btnradio18">с 10:00 до 14:00</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio19" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio19">с 18:00 до 22:00</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio20" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio20">с 14:00 до 18:00</label>
+                    </div>
+                </div>
+            </div>
+            <!-- spep-7 ------------------------------------------------------------------------------->
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-lg-start">
+                <p class="text-gray">Как СПИСАТЬ ВСЕ ДОЛГИ БЕЗ БАНКРОТСТВА в Самаре? Нет давлению ФССП и коллекторов!</p>
+                <h3 class="title_medium">Если не удастся с Вами связаться, то в какой мессенджер написать?</h3>
+                <div class="quiz-choice">
+                    <div class="btn-group d-flex flex-column flex-wrap" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio21" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary mb-2 mr-2" for="btnradio21">Whats App</label>
+            
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio22" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio22">Viber</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio23" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio23">Telegram</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio24" autocomplete="off">
+                        <label class="btn btn-outline-primary mb-2" for="btnradio24">СМС</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-lg-end">
+                <div class="quiz-bottim__block d-flex mb-5 mb-lg-0">
+                    <button class="quiz-butn-click">Назад</button>
+                    <button class="quiz-butn-click quiz-butn-click__next">Далее</button>
+                </div>
+                <div class="d-flex flex-column">
+                    <p><b>Бонусы после прохождения</b></p>
+                    <div class="d-flex flex-column">
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/1.png" alt="" class="img-ico">
+                            <p>Защита от коллекторов и банков</p>
+                        </div>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/2.png" alt="" class="img-ico">
+                            <p>Защита имущества</p>
+                        </div>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/3.png" alt="" class="img-ico">
+                            <p>Сохраним ваши финансы</p>
+                        </div>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/4.png" alt="" class="img-ico">
+                            <p>Процедура  в 5 раз быстрее</p>
+                        </div>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/5.png" alt="" class="img-ico">
+                            <p>Не  оставляем черных меток</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- last-step ------------------------------------------------------------------------------------------>
+    <div class="last-step">
+        <div class="container mt-5 h-adaptation home__main last-step_mt">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h1 class="title_big title_big_narrow">
+                        Итак, по ходу теста мы выявили, что у Вас есть возможность списать все долги на 100%.
+                    </h1>
+                        <p class="text-red">
+                            Чтобы получить федеральную программу КРЕДИТНАЯ АМНИСТИЯ и СПИСАТЬ ВСЕ ДОЛГИ на 100% оставьте заявку!
+                    </p>
+                    <div class="container-ico">
+                        <p class="mb-0">
+                            ПОЛУЧИТЕ ВАШИ <br> БОНУСЫ ДАЛЕЕ
+                        </p>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/1.png" alt="">
+                            <p>Защита от коллекторов и банков</p>
+                        </div>
+                        <div class="container-ico__box-ico">
+                            <img src="img/ico-offer/2.png" alt="">
+                            <p>Защита имущества</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                    <div class="personal-data">
+                        <p class="personal-data__atribut">Укажите Ваше имя и телефон, нажмите кнопку "Отправить", чтобы передать анкету старшему юристу. </p>
+                        <form action="" class="d-flex flex-column">
+                            <input class="mb-2 field" type="text" placeholder="Имя">
+                            <input class="mb-3 field" type="tel" placeholder="+7 (___) ___ -  - ">
+                            <button class="send" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div> 
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
