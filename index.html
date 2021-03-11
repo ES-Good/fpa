@@ -12,13 +12,30 @@
 </head>
 
 <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-blue">
+            <div class="modal-header border-0">
+              <h5 class="modal-title text-white" id="exampleModalLabel">Оставить заявку</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="d-flex flex-column">
+                    <input class="mb-2 field" type="text" placeholder="Имя">
+                    <input class="mb-3 field" type="tel" placeholder="+7 (___) ___ -  - ">
+                    <button class="send mx-auto" type="submit">Отправить</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="container-flid bg-header py-3 h-adaptation w-100 header">
         <div class="container d-flex justify-content-between">
             <a href="#" class="logo text-blue">
                 Финансовая правовая <br>
                 <span class="text-red">амнистия</span>
             </a>
-            <button class="btn-blue d-none d-md-block">Бесплатная консультация</button>
+            <button class="btn-blue d-none d-md-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Бесплатная консультация</button>
             <a href="#" class="d-block d-md-none">
                 <img src="img/phone.png" alt="" class="phone">
             </a>
