@@ -43,6 +43,10 @@
 img {
   width: 100%; }
 
+.logo {
+  text-decoration: none;
+  font-family: Ekibastuz-Black; }
+
 .title_big {
   font-family: Ekibastuz-ExtraBlack;
   font-size: 26px; }
@@ -77,7 +81,7 @@ img {
 .modal-thanks {
   z-index: 20;
   position: fixed;
-  width: 570px;
+  max-width: 570px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -88,7 +92,7 @@ img {
   border-radius: 30px; }
 
 .modal-thanks img {
-  width: 130px; }
+  width: 14vh; }
 
 .phone {
   width: 35px; }
@@ -104,7 +108,7 @@ img {
   color: #FFFFFF; }
 
 .modal-thanks__content {
-  padding: 120px 0 0 0; }
+  padding: 15vh 0 0 0; }
 
 .thanks__content--text {
   font-family: Ekibastuz-Regular;
@@ -114,7 +118,7 @@ img {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 120px; }
+  margin-bottom: 10vh; }
 
 .container-ico {
   display: flex;

@@ -54,6 +54,11 @@ img{
     width: 100%;
 }
 
+.logo{
+    text-decoration: none;
+    font-family: Ekibastuz-Black;
+}
+
 .title{
     &_big{
         font-family: Ekibastuz-ExtraBlack;
@@ -100,7 +105,7 @@ img{
 .modal-thanks {
     z-index: 20;
     position: fixed;
-    width: 570px;
+    max-width: 570px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -113,7 +118,7 @@ img{
 
 .modal-thanks{
     img{
-        width: 130px;
+        width: 14vh;
     }
 }
 
@@ -133,7 +138,7 @@ img{
 }
 
 .modal-thanks__content {
-    padding: 120px 0 0 0;
+    padding: 15vh 0 0 0;
 }
 
 .thanks__content--text {
@@ -144,7 +149,7 @@ img{
     line-height: 24px;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 120px;
+    margin-bottom: 10vh;
 }
 
 .container-ico{
@@ -383,3 +388,4 @@ img{
             border: 1px solid #1f537a !important;
         }
     }
+

@@ -3,7 +3,7 @@
     font-size: 18px; }
   .title_big {
     font-family: Ekibastuz-ExtraBlack;
-    font-size: 6vh; }
+    font-size: 4vh; }
     .title_big_narrow {
       font-family: Ekibastuz-Bold; }
   .title_medium {
@@ -26,6 +26,8 @@
 @media (min-width: 1200px) {
   .container-ico {
     flex-direction: row; }
+    .container-ico__mr {
+      margin-right: 20px; }
   .h-adaptation {
     position: absolute; }
   .home-inner,
@@ -139,7 +141,10 @@
       background-color: #357eb6 !important;
       border: 1px solid #1f537a !important; }
   .last-step_mt {
-    top: 10vh !important; } }
+    top: 10vh !important; }
+  .last-step__subtitle {
+    margin-top: 4vh;
+    margin-bottom: 13vh; } }
 
 @media (min-width: 1400px) {
   .container {
