@@ -78,7 +78,7 @@
       border: transparent !important; }
   .quiz-bottim__block {
     position: absolute;
-    bottom: 25px;
+    bottom: 0;
     left: 0; }
   .img-ico {
     width: 8vh; }
