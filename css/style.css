@@ -46,6 +46,8 @@ img {
 .logo {
   text-decoration: none;
   font-family: Ekibastuz-Black; }
+  .logo__img {
+    width: 150px; }
 
 .title_big {
   font-family: Ekibastuz-ExtraBlack;
